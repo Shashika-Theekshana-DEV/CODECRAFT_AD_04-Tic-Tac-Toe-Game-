@@ -10,7 +10,7 @@ import SwiftUI
 
 class GameViewModel: ObservableObject {
     @Published private var gameBoard = GameBoard()
-    @Published private var currentPlayer: Player = .x
+    @Published private(set) var currentPlayer: Player = .x
     @Published private(set) var gameState: GameState = .ongoing
     @Published private(set) var winningIndices: [Int]?
     

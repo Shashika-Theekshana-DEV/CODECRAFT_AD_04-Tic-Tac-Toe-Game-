@@ -19,7 +19,7 @@ enum Player: String {
     }
 }
 
-enum GameState {
+enum GameState: Equatable {
     case ongoing
     case draw
     case win(Player)
